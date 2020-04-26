@@ -82,6 +82,7 @@ img {
 
 .main-container {
     padding-top: 85px;
+    padding-bottom: 80px;
 }
 
 .product a {
@@ -162,12 +163,15 @@ img {
 
 .read-more {
     display: block;
+    width: 160px;
+    margin-top: 14px;
     color: #ffffff;
     font:  300 16px/26px "Open+Sans", sans-serif;
     text-transform: capitalize;
     background-color: #4ec6ab;
     border-radius: 3px;
-    padding: 14px 42px;
-    margin-top: 14px;
+    padding: 14px 40px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.39);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.39);
 }
-
