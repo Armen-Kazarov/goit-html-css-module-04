@@ -22,13 +22,18 @@ h2::after {
     border-top: solid 6px #1abc9c;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1110px;
     width: 100%;
 }
 
-.header-container {
+.header {
     padding-top: 38px;
     padding-bottom: 15px;
 }
@@ -42,20 +47,17 @@ h2::after {
 .logo {
     display: block;
     float: left;
-}
-
-.logo-text {
     text-transform: uppercase;
     font:  300 30px/32px "Roboto", sans-serif;
     color: #555252;
 }
 
-.logo-text:first-letter {
+.logo:first-letter {
     color: #1abc9c;
     font:  900 30px/32px "Roboto", sans-serif;
 }
 
-.nav-menu {
+.menu-list-items {
     float: right;
     margin-top: 8px;
 }
@@ -82,12 +84,90 @@ h2::after {
     padding-top: 85px;
 }
 
+.product a {
+    display: block;
+}
+
 .product {
     float: left;
     margin-right: 30px;
     width: 255px;
+    background-color: rgb(233, 240, 253);
 }
 
 .product:nth-child(4n+4) {
     margin-right: 0;
 }
+
+.product:nth-child(n+5) {
+    margin-top: 30px;
+}
+
+.about-product {
+    background-color: #323232;
+}
+
+.product:hover .about-product {
+    background-color: #1abc9c;
+}
+
+.about-product-info {
+    color: #ffffff;
+    font:  900 18px/32px "Roboto", sans-serif;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.product-name {
+    float: left;
+    padding: 7px 0 5px 14px;
+}
+
+.product-price {
+    float: right;
+    background-color: rgba(255, 255, 255, 0.439);
+    padding: 7px 14px 5px;
+}
+
+.latest-news {
+    padding-top: 100px;
+}
+
+.latest-news-list-item {
+    float: left;
+    width: 350px;
+}
+
+.latest-news-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.latest-new-description {
+    margin-top: 14px;
+    font:  600 18px/26px "Open+Sans", sans-serif;
+}
+
+.latest-new-description::after {
+    content: "";
+    display: block;
+    width: 136px;
+    border-top: solid 3px #1abc9c;
+    margin-top: 12px;
+}
+
+.latest-new-info {
+    margin-top: 26px;
+    font:  400 14px/26px "Open+Sans", sans-serif;
+}
+
+.read-more {
+    display: block;
+    color: #ffffff;
+    font:  300 16px/26px "Open+Sans", sans-serif;
+    text-transform: capitalize;
+    background-color: #4ec6ab;
+    border-radius: 3px;
+    padding: 14px 42px;
+    margin-top: 14px;
+}
+
